@@ -1,0 +1,13 @@
+/*
+
+  Remember:
+    - Changes farther down overwrite changes higher up
+    - Specific changes overwrite general changes
+    - try and use relative units, that way it scales to every resolution
+
+*/
+/*  for debugging
+* {
+  border: 1px solid #fff;
+}
+*/
