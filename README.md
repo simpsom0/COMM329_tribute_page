@@ -8,19 +8,28 @@ You’ve taken on a client who’s asked you to create a single webpage as a tri
 ## Procedure
 This section outlines the main stages of the project, presented in order. Try to gauge how long each will take you to aid in your planning.
 
-Start by researching a topic and acquiring the necessary assets: colors, fonts, images, and text.
+* Start by researching a topic and acquiring the necessary assets: colors, fonts, images, and text.
+* Next, draft the page copy, including microcopy.
+* Then, code the basic outer HTML page structure.
+* Then write the styles for the page layout (i.e. grid, flex, margins/padding, and typography).
+* After that, code the inner HTML and content.
+* Finally, style the colors and the interactive effects.
+* When you’re finished, test your page in all major browsers (Chrome, FireFox and Safari) at a variety of screen sizes.
 
-Next, draft the page copy, including microcopy.
-
-Then, code the basic outer HTML page structure.
-
-Then write the styles for the page layout (i.e. grid, flex, margins/padding, and typography).
-
-After that, code the inner HTML and content.
-
-Finally, style the colors and the interactive effects.
-
-When you’re finished, test your page in all major browsers (Chrome, FireFox and Safari) at a variety of screen sizes.
+## YOUR PAGE SHOULD USE...
+* Flex-box and grid for macro-level layout
+* Margins and padding for micro-level positioning.
+* Semantic HTML elements (i.e. <nav>, <article>, etc.)
+* Both /mini_reset.css and /normalize.css
+* Both images and text.
+* Both good color and good typography.
+* A google font (or two).
+* Font-awesome icons or html entities
+* A list of some kind.
+* Navigation to two fake pages.
+* Copyright in the footer.
+* Inline anchor links in the body text.
+* Hover effects on both images and links.
 
 ## Tribute Wireframe
 ![tribute wireframe image](/img/wireframe.jpg)
