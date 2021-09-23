@@ -4,10 +4,37 @@
     - Changes farther down overwrite changes higher up
     - Specific changes overwrite general changes
     - try and use relative units, that way it scales to every resolution
+    - "mobile first"
+
+    Variable usage:
+     - https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management
+     - could be used for grid/flex layouts
+     - could be use for repeating colors
 
 */
-/*  for debugging
+/*  for debugging */
 * {
-  border: 1px solid #fff;
+  border: 1px solid red;
 }
-*/
+
+.grid-container {
+
+}
+
+.grid-item {
+
+}
+
+.h-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.h-list-item {
+
+}
+
+.footer {
+  text-align: center;
+}

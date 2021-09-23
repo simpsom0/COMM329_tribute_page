@@ -1,0 +1,42 @@
+reference various resources I plan to use
+
+
+images:
+
+ - if bruce:
+     - mainly will come from asking friends for photos
+
+ - if blinkers:
+     - mainly stock images/copyright free basic car pictures
+
+
+fonts:
+
+ - if bruce:
+     - title: https://fonts.google.com/specimen/Bonheur+Royale
+     - body: https://fonts.google.com/specimen/Open+Sans
+
+ - if blinkers (interchangeable?):
+     - title: https://fonts.google.com/specimen/Hind+Siliguri
+     - body: https://fonts.google.com/specimen/Nanum+Gothic
+
+
+colors:
+ - if bruce:
+     - beach: https://www.color-hex.com/color-palette/895
+     - aesthetic: https://www.color-hex.com/color-palette/4628
+
+ - if blinkers:
+     - twitter night mode: https://www.color-hex.com/color-palette/55334
+
+ - helpful for dropshadows and insets:
+     - off white: https://www.color-hex.com/color-palette/23730
+     - soft black: https://www.color-hex.com/color-palette/1405
+
+ - generally solid:
+     - discord: https://www.color-hex.com/color-palette/25362
+     - twitter night mode: https://www.color-hex.com/color-palette/55334
+
+
+icons
+ - https://use.fontawesome.com/releases/v5.7.1/css/all.css
