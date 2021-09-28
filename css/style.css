@@ -89,7 +89,15 @@ body {
   flex-basis: 33%;
   text-align: center;
   background-color: #141d26;
-  margin: 10px;
+  margin: 20px 10px 10px 10px;
+}
+
+.r_one {
+  margin-left: 20px;
+}
+
+.r_three {
+  margin-right: 20px;
 }
 
 .numReason {
@@ -101,60 +109,39 @@ body {
   margin-bottom: 10px;
 }
 
-.contents {
-  display: flex;
-  justify-content: space-around;
-}
-
-.image_container {
+#content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.desc_img {
-  height: 140px;
-  width: 250px;
-  margin: 10px;
-}
-
-#img_1 {
-  background: #114357;
-  background: -webkit-linear-gradient(to top, #F29492, #114357);
-  background: linear-gradient(to top, #F29492, #114357);
-}
-
-#img_2 {
-  background: #403B4A;
-  background: -webkit-linear-gradient(to top, #E7E9BB, #403B4A);
-  background: linear-gradient(to top, #E7E9BB, #403B4A);
-}
-
-#img_3 {
-  background: #136a8a;
-  background: -webkit-linear-gradient(to top, #267871, #136a8a);
-  background: linear-gradient(to top, #267871, #136a8a);
-}
-
-.descriptions {
+.description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-}
-
-.description_container {
-  height: 140px;
-  margin: 10px;
-  background-color: #141d26;
-  display: flex;
   align-items: center;
 }
 
-.text_description {
-  padding: 6px;
+.description_text_container {
+  height: calc(100% - 20px); /* same as image */
+  margin: 10px 20px 10px 20px;
+  background-color: #141d26;
+  display: flex;
+  align-items: center;
+  flex-basis: 66%;
 }
 
-.reason, .desc_img, .description_container, .link_title {
+.description_text {
+  padding: 10px;
+}
+
+.image {
+  width: 33%;
+  flex-basis: 33%;
+  margin: 10px 20px 10px 20px;
+}
+
+.reason, .image, .description_text_container, .link_title {
   position: relative;
   animation-name: return_pos;
   animation-duration: 0.2s;
@@ -163,7 +150,7 @@ body {
   animation-iteration-count: 1;
 }
 
-.reason:hover, .desc_img:hover, .description_container:hover, .link_title:hover {
+.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover {
   animation-name: change_pos;
   animation-duration: 0.2s;
   animation-direction: normal;
