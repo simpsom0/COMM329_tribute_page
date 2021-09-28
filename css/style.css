@@ -11,30 +11,254 @@
      - could be used for grid/flex layouts
      - could be use for repeating colors
 
+     Grid:
+      - 6x1
+
 */
-/*  for debugging */
+/*  for debugging
 * {
-  border: 1px solid red;
+  border: 1px solid #c51f5d;
+  margin: 4px;
+} */
+
+body {
+  background-color: #141d26;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.grid-container {
-
+.grid_item {
+  background-color: #243447;
 }
 
-.grid-item {
-
+.grid_container {
+  display: grid;
 }
 
-.h-list {
+.h_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h_list_item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#proposition {
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+}
+
+.hero {
+  margin: auto;
+  height: 98vh;
+  background: #EFEFBB;
+  background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+  background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+}
+
+#title {
+  padding-bottom: .01em;
+  padding-top: 3.2em;
+  text-align: center;
+  vertical-align: bottom;
+  font-family: 'Abril Fatface', serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+#subTitle {
+  text-align: center;
+  vertical-align: top;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.reason_container {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
 }
 
-.h-list-item {
+.reason {
+  flex-basis: 33%;
+  text-align: center;
+  background-color: #141d26;
+  margin: 10px;
+}
 
+.numReason {
+  font-size: 52px;
+}
+
+.subReason {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.desc_img {
+  height: 140px;
+  width: 250px;
+  margin: 10px;
+}
+
+#img_1 {
+  background: #114357;
+  background: -webkit-linear-gradient(to top, #F29492, #114357);
+  background: linear-gradient(to top, #F29492, #114357);
+}
+
+#img_2 {
+  background: #403B4A;
+  background: -webkit-linear-gradient(to top, #E7E9BB, #403B4A);
+  background: linear-gradient(to top, #E7E9BB, #403B4A);
+}
+
+#img_3 {
+  background: #136a8a;
+  background: -webkit-linear-gradient(to top, #267871, #136a8a);
+  background: linear-gradient(to top, #267871, #136a8a);
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.description_container {
+  height: 140px;
+  margin: 10px;
+  background-color: #141d26;
+  display: flex;
+  align-items: center;
+}
+
+.text_description {
+  padding: 6px;
+}
+
+.reason, .desc_img, .description_container, .link_title {
+  position: relative;
+  animation-name: return_pos;
+  animation-duration: 0.2s;
+  animation-direction: forwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+.reason:hover, .desc_img:hover, .description_container:hover, .link_title:hover {
+  animation-name: change_pos;
+  animation-duration: 0.2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes change_pos {
+  from {
+    right: 0px;
+    bottom: 0px;
+  }
+  to {
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+  }
+}
+
+@keyframes return_pos {
+  from {
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+  }
+  to {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+#resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.link_title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.link_title_div {
+  flex-basis: 92%;
+}
+
+.link_title {
+  background-color: #141d26;
+  font-size: 2.3em;
+  flex-basis: 20%;
+  text-decoration: underline;
+  padding: 3vh, 0vw, 3vh, 0vw;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 8vh;
+}
+
+.flex_links_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link_lists {
+  list-style: circle;
+}
+
+.link {
+  color: #ffffff;
+}
+
+.link:visited {
+  color: #c51f5d;
+}
+
+.link:hover {
+  font-weight: 900;
 }
 
 .footer {
   text-align: center;
+  background-color: #141d26;
+}
+
+.space {
+  height: 20vh;
+}
+
+#top {
+  height: 1vh;
+}
+
+#bottom {
+  height: 25vh;
 }

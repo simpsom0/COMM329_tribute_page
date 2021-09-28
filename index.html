@@ -4,83 +4,135 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- .css files -->
     <link href="css/mini_reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sanitize.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
   </head>
 
   <body>
     <main class="page">
 
-      <!-- TODO: topic: bruce vs using blinkers? -->
-      <section class="grid-container">
-        <div class="grid-item" id="header">
+      <section class="grid_container">
+        <div class="grid_item" id="header">
         <!-- links, class, general navigation -->
         <!-- class, project -->
-          <ul class="h-list">
-            <li class="h-list-item class">
-              <p>Lorem</p>
+          <ul class="h_list">
+            <li class="h_list_item">
+              <p><i class="fas fa-arrow-left"></i> Back</p>
             </li>
             <!--
-            <li class="h-list-item divider">
+            <li class="h_list_item">
               <p>|</p>
             </li>
             -->
-            <li class="h-list-item project">
-              <p>Ipsum</p>
+            <li class="h_list_item">
+              <p>Next <i class="fas fa-arrow-right"></i></p>
             </li>
           </ul>
         </div>
 
-        <div class="grid-item" id="proposition">
+        <div class="" id="proposition" name="photo">
         <!-- image, "title" area, should include a smaller sub-title, all on top of image -->
-
+          <section class="hero">
+            <p id="title">bruce</p>
+            <p id="subTitle">the biggest man on campus</p>
+          </section>
         </div>
 
-        <div class="grid-item" id="reasons">
+        <div class="grid_item space" id="top"></div>
+
+        <div class="grid_item" id="reasons">
         <!-- reasons to be described in depth in "content" -->
-          <section class="flex-container reasons">
-            <div class="reason r-one">
-
+          <section class="flex_container reason_container">
+            <div class="reason r_one">
+              <p class="numReason">1</p>
+              <p class="subReason">#1 personality</p>
             </div>
 
-            <div class="reason r-two">
-
+            <div class="reason r_two">
+              <p class="numReason">2</p>
+              <p class="subReason">#1 belly</p>
             </div>
 
-            <div class="reason r-three">
-
+            <div class="reason r_three">
+              <p class="numReason">3</p>
+              <p class="subReason">#1 cat</p>
             </div>
           </section>
         </div>
 
-        <div class="grid-item" id="content">
+        <div class="grid_item space"></div>
+
+        <div class="grid_item" id="content">
         <!-- image, reason headers, and description -->
-          <section class="flex-container content">
-            <div class="content c-one">
+          <section class="flex_container contents">
+            <section class="content_item image_container">
+              <section class="desc_img" id="img_1"></section>
+              <section class="desc_img" id="img_2"></section>
+              <section class="desc_img" id="img_3"></section>
+            </section>
 
-            </div>
-
-            <div class="content c-two">
-
-            </div>
-
-            <div class="content c-three">
-
-            </div>
+            <section class="content_item descriptions">
+              <div class="description_container d_one">
+                <p class="text_description">
+                  dolor sit amet, consectetur adipiscing elit. Aliquam euismod metus eu consectetur faucibus. Phasellus varius euismod nunc at ornare. Aliquam erat volutpat. Donec porta enim vitae luctus porttitor.
+                </p>
+              </div>
+              <div class="description_container d_two">
+                <p class="text_description">
+                  Duis scelerisque placerat ante ultrices tempor. Curabitur pharetra volutpat tellus ut iaculis. Etiam sit amet congue elit, at imperdiet eros. Nulla imperdiet bibendum nisi, vel facilisis dolor euismod eget.
+                </p>
+              </div>
+              <div class="description_container d_three">
+                <p class="text_description">
+                  Suspendisse mollis, diam id dictum accumsan, ligula tortor posuere libero, a venenatis magna nibh a risus. Integer et feugiat nisl. Etiam vitae urna facilisis, elementum enim non, consequat dui.
+                </p>
+              </div>
+            </section>
           </section>
         </div>
 
-        <div class="grid-item" id="resources">
-        <!-- inlcude hyperlinked resources as a list -->
-          <ul class="resources">
+        <div class="grid_item space" id="bottom"></div>
 
-          </ul>
+        <div class="grid_item" id="resources">
+        <!-- inlcude hyperlinked resources as a list -->
+          <div class="link_title_container">
+            <div class="link_title_div"></div>
+            <p class="link_title">Links</p>
+            <div class="link_title_div"></div>
+          </div>
+
+          <div class="flex_links_container">
+            <div class="links_left">
+              <ul class="link_lists">
+                <li><a href="https://www.viagenpets.com/product/initiate-cloning/" class="link">clone bruce</a></li>
+              </ul>
+            </div>
+
+            <div class="links_right">
+              <ul class="link_lists">
+                <li><a href="https://www.tandfonline.com/doi/abs/10.2752/089279399787000237?src=recsys" class="link">cat mental health effects</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-        <div class="grid-item">
+        <div class="grid_item space"></div>
+
+        <div class="grid_item">
         <!-- my name, maybe copyright? -->
-          <p class="footer">Michael Simpson</p>
+          <p class="footer"><i class="far fa-copyright"></i> Michael Simpson</p>
         </div>
       </section> <!-- ends grid-container -->
     </main>
