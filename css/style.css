@@ -135,6 +135,10 @@ body {
   padding: 10px;
 }
 
+.d_two {
+  flex-direction: row-reverse;
+}
+
 .image {
   width: 33%;
   flex-basis: 33%;
