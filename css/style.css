@@ -25,15 +25,13 @@ body {
   background-color: #141d26;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+  display: grid;
 }
 
 .grid_item {
   background-color: #243447;
 }
 
-.grid_container {
-  display: grid;
-}
 
 .h_list {
   display: flex;
@@ -59,7 +57,7 @@ body {
   font-size: 1.1em;
 }
 
-#proposition {
+#title_screen {
   position: sticky;
   top: 0px;
   z-index: -1;
@@ -83,6 +81,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: .1em;
+  color: #c51f5d;
 }
 
 #subTitle {
@@ -118,6 +117,8 @@ body {
 
 .numReason {
   font-size: 64px;
+  font-family: 'Abril Fatface';
+  color: #c51f5d;
 }
 
 .subReason {
@@ -140,7 +141,7 @@ body {
 }
 
 .description_text_container {
-  height: calc(100% - 20px); /* same as image */
+  height: calc(100% - 20px); /* to match image */
   margin: 10px 20px 10px 20px;
   background-color: #141d26;
   display: flex;
@@ -162,7 +163,7 @@ body {
   margin: 10px 20px 10px 20px;
 }
 
-.reason, .image, .description_text_container, .link_title, .flex_links_container {
+.reason, .image, .description_text_container, .link_title, .flex_links_container, .t_container {
   position: relative;
   animation-name: return_pos;
   animation-duration: 0.2s;
@@ -171,7 +172,7 @@ body {
   animation-iteration-count: 1;
 }
 
-.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover, .flex_links_container:hover {
+.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover, .flex_links_container:hover, .t_container:hover {
   animation-name: change_pos;
   animation-duration: 0.2s;
   animation-direction: normal;
@@ -202,6 +203,57 @@ body {
     right: 0px;
     bottom: 0px;
   }
+}
+
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.t_container {
+  background-color: #141d26;
+  margin: 20px;
+  padding: 25px;
+}
+
+.t_one {
+  margin: 20px 10px 10px 20px;
+}
+
+.t_two {
+  margin: 20px 20px 10px 10px;
+}
+
+.t_three {
+  margin: 10px 10px 10px 20px
+}
+
+.t_four {
+  margin: 10px 20px 10px 10px
+}
+
+.t_five {
+  margin: 10px 10px 20px 20px
+}
+
+.t_six {
+  margin: 10px 20px 20px 10px
+}
+
+.quote_icon {
+  font-family: 'Ephesis';
+  color: #c51f5d;
+  font-size: 100px;
+  margin: -20px 0 -80px 0;
+}
+
+.t_quote {
+  padding: 20px 20px 15px 25px;
+}
+
+.t_author {
+  text-align: right;
 }
 
 #resources {
@@ -263,7 +315,7 @@ body {
 }
 
 .space {
-  height: 20vh;
+  height: 30vh;
 }
 
 #top {

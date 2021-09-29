@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
 
     <!-- .css files -->
     <link href="css/mini_reset.css" rel="stylesheet">
@@ -13,128 +14,182 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ephesis" rel="stylesheet">
   </head>
 
-  <body>
-    <main class="page">
 
-      <section class="grid_container">
-        <div class="grid_item" id="header">
-        <!-- links, class, general navigation -->
-        <!-- class, project -->
-          <ul class="h_list">
-            <li class="h_list_item">
-              <a href="https://bit.ly/2WpxM9g" class="h_list_text"><i class="fas fa-arrow-left"></i> Back</a>
-            </li>
-            <!--
-            <li class="h_list_item">
-              <p>|</p>
-            </li>
-            -->
-            <li class="h_list_item">
-              <a href="https://bit.ly/2WpxM9g" class="h_list_text">Next <i class="fas fa-arrow-right"></i></a>
-            </li>
+
+  <body>
+    <!-- header -->
+    <div class="grid_item" id="header">
+      <ul class="h_list">
+
+        <li class="h_list_item">
+          <a href="https://bit.ly/2WpxM9g" class="h_list_text"><i class="fas fa-arrow-left"></i> Back</a>
+        </li>
+
+        <li class="h_list_item">
+          <a href="https://bit.ly/2WpxM9g" class="h_list_text">Next <i class="fas fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- landing page, image, title, subtitle -->
+    <div class="" id="title_screen">
+      <section class="hero">
+        <p id="title">bruce</p>
+        <p id="subTitle">the biggest man on campus</p>
+      </section>
+    </div>
+    <div class="grid_item space" id="top"></div>
+
+
+    <!-- 3 main reasons -->
+    <div class="grid_item reason_container">
+
+      <div class="reason r_one">
+        <p class="numReason">1</p>
+        <p class="subReason">#1 paws </p>
+      </div>
+
+      <div class="reason r_two">
+        <p class="numReason">2</p>
+        <p class="subReason">#1 belly </p>
+      </div>
+
+      <div class="reason r_three">
+        <p class="numReason">3</p>
+        <p class="subReason">#1 cat </p>
+      </div>
+    </div>
+    <div class="grid_item space" id="middle"></div>
+
+
+    <!-- image + description to provide context to each reason -->
+    <div class="grid_item" id="content">
+
+      <div class="description d_one">
+        <img src="img/16x9-Ratio-Image.jpg" class="image">
+        <div class="description_text_container d_one">
+          <p class="description_text">
+            dolor sit amet, consectetur adipiscing elit. Aliquam euismod metus eu consectetur faucibus. Phasellus varius euismod nunc at ornare. Aliquam erat volutpat. Donec porta enim vitae luctus porttitor.
+          </p>
+        </div>
+      </div>
+
+      <div class="description d_two">
+        <img src="img/16x9-Ratio-Image.jpg" class="image">
+        <div class="description_text_container d_two">
+          <p class="description_text">
+            Duis scelerisque placerat ante ultrices tempor. Curabitur pharetra volutpat tellus ut iaculis. Etiam sit amet congue elit, at imperdiet eros. Nulla imperdiet bibendum nisi, vel facilisis dolor euismod eget.
+          </p>
+        </div>
+      </div>
+
+      <div class="description d_three">
+        <img src="img/16x9-Ratio-Image.jpg" class="image">
+        <div class="description_text_container d_three">
+          <p class="description_text">
+            Suspendisse mollis, diam id dictum accumsan, ligula tortor posuere libero, a venenatis magna nibh a risus. Integer et feugiat nisl. Etiam vitae urna facilisis, elementum enim non, consequat dui.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_item space"></div>
+
+
+    <!-- testimonials to the greatness of bruce -->
+    <div class="grid_item" id="testimonials">
+
+      <div class="t_container t_one">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          Vivamus varius eleifend erat, nec fermentum lacus. Nunc nisi mi, convallis eget risus eget, pharetra pulvinar magna. Donec varius accumsan pretium.
+        </p>
+        <p class="t_author"><br>- Person One</p>
+      </div>
+
+      <div class="t_container t_two">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          Curabitur id ex mollis dolor congue egestas. Phasellus at maximus velit, ornare gravida enim. Sed eu posuere est. Vivamus id feugiat justo, id hendrerit mi.
+        </p>
+        <p class="t_author"><br>- Person Two</p>
+      </div>
+
+      <div class="t_container t_three">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          Nam viverra tristique maximus. Maecenas feugiat volutpat erat, non posuere mi efficitur vitae. Maecenas scelerisque elementum lectus, id efficitur nulla sagittis quis.
+        </p>
+        <p class="t_author"><br>- Person Three</p>
+      </div>
+
+      <div class="t_container t_four">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          In a eros in ipsum bibendum eleifend. Aenean eu est quis turpis tincidunt pretium quis nec mi. Etiam vel nulla vitae elit egestas ultrices a eu orci.
+        </p>
+        <p class="t_author"><br>- Person Four</p>
+      </div>
+
+      <div class="t_container t_five">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          Nam nunc nunc, fringilla in ornare eget, molestie in nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper ac metus eget pellentesque.
+        </p>
+        <p class="t_author"><br>- Person Five</p>
+      </div>
+
+      <div class="t_container t_six">
+        <p class="quote_icon">"</p>
+        <p class="t_quote">
+          Vivamus urna ante, sollicitudin eget lectus sed, tristique cursus sem. Proin neque tortor, egestas vel facilisis sed, pulvinar in libero.
+        </p>
+        <p class="t_author"><br>- Person Six</p>
+      </div>
+    </div>
+    <div class="grid_item space" id="bottom"></div>
+
+
+    <!-- links + resources to view. Had to make two seperate lists so they would fit nicely -->
+    <div class="grid_item" id="resources">
+
+      <div class="link_title_container">
+        <div class="link_title_div"></div>
+        <p class="link_title">Resources</p>
+        <div class="link_title_div"></div>
+      </div>
+
+      <div class="flex_links_container">
+
+        <div class="links_left">
+          <ul class="link_lists">
+            <li class="list_item"><a href="https://www.viagenpets.com/product/initiate-cloning/" class="link">Clone bruce</a></li>
+            <li class="list_item"><a href="https://github.com/simpsom0/COMM329_tribute_page" class="link">GitHub</a></li>
           </ul>
         </div>
 
-        <div class="" id="proposition">
-        <!-- image, "title" area, should include a smaller sub-title, all on top of image -->
-          <section class="hero">
-            <p id="title">bruce</p>
-            <p id="subTitle">the biggest man on campus</p>
-          </section>
+        <div class="links_right">
+          <ul class="link_lists">
+            <li class="list_item"><a href="https://www.tandfonline.com/doi/abs/10.2752/089279399787000237?src=recsys" class="link">Cat mental health effects</a></li>
+            <li class="list_item"><a href="img/wireframe.jpg" class="link">Project guidelines</a></li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <div class="grid_item space"></div>
 
-        <div class="grid_item space" id="top"></div>
 
-        <div class="grid_item reason_container" id="reasons">
-        <!-- reasons to be described in depth in "content" -->
-          <div class="reason r_one">
-            <p class="numReason">1</p>
-            <p class="subReason">#1 paws </p>
-          </div>
-
-          <div class="reason r_two">
-            <p class="numReason">2</p>
-            <p class="subReason">#1 belly </p>
-          </div>
-
-          <div class="reason r_three">
-            <p class="numReason">3</p>
-            <p class="subReason">#1 cat </p>
-          </div>
-        </div>
-
-        <div class="grid_item space"></div>
-
-        <div class="grid_item" id="content">
-        <!-- image, reason headers, and description -->
-          <div class="description d_one">
-            <img src="img/16x9-Ratio-Image.jpg" class="image">
-            <div class="description_text_container d_one">
-              <p class="description_text">
-                dolor sit amet, consectetur adipiscing elit. Aliquam euismod metus eu consectetur faucibus. Phasellus varius euismod nunc at ornare. Aliquam erat volutpat. Donec porta enim vitae luctus porttitor.
-              </p>
-            </div>
-          </div>
-          <div class="description d_two">
-            <img src="img/16x9-Ratio-Image.jpg" class="image">
-            <div class="description_text_container d_two">
-              <p class="description_text">
-                Duis scelerisque placerat ante ultrices tempor. Curabitur pharetra volutpat tellus ut iaculis. Etiam sit amet congue elit, at imperdiet eros. Nulla imperdiet bibendum nisi, vel facilisis dolor euismod eget.
-              </p>
-            </div>
-          </div>
-          <div class="description d_three">
-            <img src="img/16x9-Ratio-Image.jpg" class="image">
-            <div class="description_text_container d_three">
-              <p class="description_text">
-                Suspendisse mollis, diam id dictum accumsan, ligula tortor posuere libero, a venenatis magna nibh a risus. Integer et feugiat nisl. Etiam vitae urna facilisis, elementum enim non, consequat dui.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid_item space" id="bottom"></div>
-
-        <div class="grid_item" id="resources">
-        <!-- inlcude hyperlinked resources as a list -->
-          <div class="link_title_container">
-            <div class="link_title_div"></div>
-            <p class="link_title">Resources</p>
-            <div class="link_title_div"></div>
-          </div>
-
-          <div class="flex_links_container">
-            <div class="links_left">
-              <ul class="link_lists">
-                <li class="list_item"><a href="https://www.viagenpets.com/product/initiate-cloning/" class="link">Clone bruce</a></li>
-                <li class="list_item"><a href="https://github.com/simpsom0/COMM329_tribute_page" class="link">GitHub</a></li>
-              </ul>
-            </div>
-
-            <div class="links_right">
-              <ul class="link_lists">
-                <li class="list_item"><a href="https://www.tandfonline.com/doi/abs/10.2752/089279399787000237?src=recsys" class="link">Cat mental health effects</a></li>
-                <li class="list_item"><a href="img/wireframe.jpg" class="link">Project guidelines</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="grid_item space"></div>
-
-        <div class="grid_item">
-        <!-- my name, maybe copyright? -->
-          <p class="footer"><i class="far fa-copyright"></i> Michael Simpson</p>
-        </div>
-      </section> <!-- ends grid-container -->
-    </main>
+    <!-- footer -->
+    <div class="grid_item">
+      <p class="footer"><i class="far fa-copyright"></i> Michael Simpson</p>
+    </div>
   </body>
 
 </html>
