@@ -1,9 +1,7 @@
 TODO:
+ - get rid of empty divs, use margins instead
 
- - make content section have blocks of img+text instead of all img + all text
-
- - make images larger for desktop
-    - (2:1:1) (img:space:text)
+ - testimonial title?
 
  - create animations for:
     - header hiding/coming out based off scroll

@@ -245,15 +245,17 @@ body {
   font-family: 'Ephesis';
   color: #c51f5d;
   font-size: 100px;
-  margin: -20px 0 -80px 0;
+  margin: -20px 0 -80px -5px;
 }
 
 .t_quote {
-  padding: 20px 20px 15px 25px;
+  padding: 20px 20px 15px 40px;
+  letter-spacing: 0.01em;
 }
 
 .t_author {
   text-align: right;
+  padding-right: 20px;
 }
 
 #resources {
