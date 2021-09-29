@@ -45,6 +45,20 @@ body {
   margin-right: 5px;
 }
 
+.h_list_text {
+  transition-property: all;
+  transition-duration: 0.2s;
+  color: #ffffff;
+}
+
+.link:visited, .h_list_text:visited {
+  color: #c51f5d;
+}
+
+.link:hover, .h_list_text:hover {
+  font-size: 1.1em;
+}
+
 #proposition {
   position: sticky;
   top: 0px;
@@ -89,6 +103,8 @@ body {
   flex-basis: 33%;
   text-align: center;
   background-color: #141d26;
+  padding-top: 3vh;
+  padding-bottom:3vh;
   margin: 20px 10px 10px 10px;
 }
 
@@ -101,12 +117,12 @@ body {
 }
 
 .numReason {
-  font-size: 52px;
+  font-size: 64px;
 }
 
 .subReason {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin: 10px 0 10px 0;
 }
 
 #content {
@@ -120,7 +136,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
 .description_text_container {
@@ -146,7 +162,7 @@ body {
   margin: 10px 20px 10px 20px;
 }
 
-.reason, .image, .description_text_container, .link_title {
+.reason, .image, .description_text_container, .link_title, .flex_links_container {
   position: relative;
   animation-name: return_pos;
   animation-duration: 0.2s;
@@ -155,7 +171,7 @@ body {
   animation-iteration-count: 1;
 }
 
-.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover {
+.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover, .flex_links_container:hover {
   animation-name: change_pos;
   animation-duration: 0.2s;
   animation-direction: normal;
@@ -202,7 +218,7 @@ body {
 }
 
 .link_title_div {
-  flex-basis: 92%;
+  flex-basis: 57%;
 }
 
 .link_title {
@@ -210,16 +226,25 @@ body {
   font-size: 2.3em;
   flex-basis: 20%;
   text-decoration: underline;
-  padding: 3vh, 0vw, 3vh, 0vw;
   vertical-align: middle;
   text-align: center;
-  margin-bottom: 8vh;
+  padding-bottom: 1vh;
+  margin-bottom: 4vh;
 }
 
 .flex_links_container {
+  background-color: #141d26;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-basis: 50%;
+  margin: 0 20vw 0 20vw;
+  padding-top: 1em;
+}
+
+.list_item {
+  height: 3em;
+  width: 20vw;
 }
 
 .link_lists {
@@ -228,14 +253,8 @@ body {
 
 .link {
   color: #ffffff;
-}
-
-.link:visited {
-  color: #c51f5d;
-}
-
-.link:hover {
-  font-weight: 900;
+  transition-property: all;
+  transition-duration: 0.2s;
 }
 
 .footer {
