@@ -95,6 +95,7 @@ body {
 
 .reason_container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -104,15 +105,7 @@ body {
   background-color: #141d26;
   padding-top: 3vh;
   padding-bottom:3vh;
-  margin: 20px 10px 10px 10px;
-}
-
-.r_one {
-  margin-left: 20px;
-}
-
-.r_three {
-  margin-right: 20px;
+  margin: 20px 20px 10px 20px;
 }
 
 .numReason {
@@ -134,7 +127,7 @@ body {
 
 .description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
@@ -145,6 +138,7 @@ body {
   margin: 10px 20px 10px 20px;
   background-color: #141d26;
   display: flex;
+  flex-direction: row;
   align-items: center;
   flex-basis: 66%;
 }
@@ -153,62 +147,15 @@ body {
   padding: 10px;
 }
 
-.d_two {
-  flex-direction: row-reverse;
-}
-
 .image {
-  width: 33%;
+  width: 90%;
   flex-basis: 33%;
   margin: 10px 20px 10px 20px;
 }
 
-.reason, .image, .description_text_container, .link_title, .flex_links_container, .t_container {
-  position: relative;
-  animation-name: return_pos;
-  animation-duration: 0.2s;
-  animation-direction: forwards;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-}
-
-.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover, .flex_links_container:hover, .t_container:hover {
-  animation-name: change_pos;
-  animation-duration: 0.2s;
-  animation-direction: normal;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
-
-@keyframes change_pos {
-  from {
-    right: 0px;
-    bottom: 0px;
-  }
-  to {
-    right: 5px;
-    bottom: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
-  }
-}
-
-@keyframes return_pos {
-  from {
-    right: 5px;
-    bottom: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
-  }
-  to {
-    right: 0px;
-    bottom: 0px;
-  }
-}
-
 #testimonials {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .t_container {
@@ -218,27 +165,19 @@ body {
 }
 
 .t_one {
-  margin: 20px 10px 10px 20px;
+  margin: 20px 20px 10px 20px;
 }
 
 .t_two {
-  margin: 20px 20px 10px 10px;
+  margin: 10px 20px 10px 20px;
 }
 
 .t_three {
-  margin: 10px 10px 10px 20px
+  margin: 10px 20px 10px 20px
 }
 
 .t_four {
-  margin: 10px 20px 10px 10px
-}
-
-.t_five {
-  margin: 10px 10px 20px 20px
-}
-
-.t_six {
-  margin: 10px 20px 20px 10px
+  margin: 10px 20px 20px 20px
 }
 
 .quote_icon {
@@ -284,6 +223,8 @@ body {
   text-align: center;
   padding-bottom: 1vh;
   margin-bottom: 4vh;
+  padding: 0px 4px 0px 4px;
+  white-space: nowrap;
 }
 
 .flex_links_container {
@@ -299,6 +240,7 @@ body {
 .list_item {
   height: 3em;
   width: 20vw;
+  margin: 40px 0 40px 0;
 }
 
 .link_lists {
@@ -326,4 +268,82 @@ body {
 
 #bottom {
   height: 25vh;
+}
+
+
+/* Annimations */
+.reason, .image, .description_text_container, .link_title, .flex_links_container, .t_container {
+  position: relative;
+  animation-name: return_pos;
+  animation-duration: 0.2s;
+  animation-direction: forwards;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+.reason:hover, .image:hover, .description_text_container:hover, .link_title:hover, .flex_links_container:hover, .t_container:hover {
+  animation-name: change_pos;
+  animation-duration: 0.2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes change_pos {
+  from {
+    right: 0px;
+    bottom: 0px;
+  }
+  to {
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+  }
+}
+
+@keyframes return_pos {
+  from {
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+  }
+  to {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 550px) {
+  .image { min-width: 500px; }
+}
+
+@media screen and (min-width: 768px) {
+  .reason_container { flex-direction: row; }
+  .reason { margin: 20px 10px 10px 10px; }
+  .r_one { margin-left: 20px; }
+  .r_three { margin-right: 20px; }
+  .list_item { margin: 10px 0 10px 0; }
+}
+
+@media screen and (min-width: 990px) {
+  #testimonials { grid-template-columns: repeat(2, 1fr);
+                  grid-template-rows: repeat(2, 1fr); }
+  .t_one { margin: 20px 10px 10px 20px; }
+  .t_two { margin: 20px 20px 10px 10px; }
+  .t_three { margin: 10px 10px 20px 20px; }
+  .t_four { margin: 10px 20px 20px 10px; }
+  .description, .description_container { flex-direction: row;}
+  .d_two { flex-direction: row-reverse; }
+  .list_item { margin: 0 0 0 0; }
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
 }

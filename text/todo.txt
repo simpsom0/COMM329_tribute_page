@@ -1,7 +1,19 @@
 TODO:
+ - make all author names on the same horizontal line
+
+ - testimonial title
+
+ - add media queries
+    - reasons become rows (1x3 -> 3x1)
+    - descriptions become rows (3x2 -> 6x1)
+      - need to:
+        - make image fill screen on lower width
+    - testamonials become rows (2x2 -> 4x1)
+    - resources has to adapt too
+
  - get rid of empty divs, use margins instead
 
- - testimonial title?
+ - use unicode values for symbols instead of font awesome
 
  - create animations for:
     - header hiding/coming out based off scroll
