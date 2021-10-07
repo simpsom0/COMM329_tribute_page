@@ -322,6 +322,11 @@ body {
 
 /* Media Queries */
 /* assuming there will be nothing viewing my site under 550px wide */
+@media screen and (min-width: 400px) {
+  .image { min-width: 500px; }
+  .title_text { bottom: 10em; }
+}
+
 @media screen and (min-width: 550px) {
   .image { min-width: 500px; }
   .title_text { bottom: 18em; }
